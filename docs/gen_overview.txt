@@ -1,0 +1,38 @@
+Goal of gradient descent:
+Rather than comparison (in parallel) try and find a good local minima!
+
+What do we want: To try and find a good consistent paint thickness!
+How will it be calculated: Finding the error (Norm of thickness vector minus the
+average thickness
+
+Right now not caring about the velocity (how thick) just care about making the thickness uniform!
+
+-------
+Optimization function:
+
+Inputs:
+- Liftoff
+- Line Spacing
+- Point Spacing
+
+Output is a scalar error
+
+Gen Flow-->
+Call noether usising made service
+Passing in exleys code 
+calulating the mean
+calculating the error
+------
+
+Unconstrained gradient descent:
+
+initial params
+
+Line spacing 
+roughly ~1/2 the fan width
+Point spacing rougly ~1/2 of the minopr axis of fan width (eclipse)
+
+Stock scipy optimization
+
+start with the simplex - won't need to be as fast but only need top be called once,
+really simple and well behaved, won't need to write as many auxiliery functions!

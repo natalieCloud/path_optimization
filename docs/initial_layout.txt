@@ -1,0 +1,32 @@
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+<error_func> 
+	Takes in the paint thickness vector, and returns a scaler error
+	(standard dev)
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+<call_noether>
+	Calls the noether service w/ fixed variables (liftoff, 
+	line spacing, point spacing) and constant variables (search rad,
+	min_hole_size, min_segment_size) returns a tool path and several
+	sucess variables (message and boolean sucess)
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+<call_thickness>
+	Calls the path planner simulation calculator with the generated
+	tool path plan and returns the thickness by sample!
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+/// NOTES ///
+
+All of the above functionality will be wrapped up into the optimization
+funciton! The only inputs it can take in (via the array) are the ones
+which will be optimized! If we need other variables we'll need to pass
+their values implicity through annonymous function handles! 
+See- Lambda functions
+
+Also- scipy.optimize allows for additional args to be passed through
+so it may not need to be done voa the implicit func handles:
+https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.minimize.html#scipy.optimize.minimize
+
