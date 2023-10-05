@@ -1,0 +1,9 @@
+Discussed Today:
+
+Method of optimization: 
+  "Needler-Mead" : This one is more akin to what Mike's code is currently doing, a good jumping off point
+  "BFGS" : This is the one that we will probrobly end up going with- has a more precise selection around the
+           "point of interest" than the former algorithm. 
+  So we have the grid that we given the grid from mike's code- take the best output from that grid (essentially
+  when we go into the second loop) is when we'd slide into the gradient descent giving that starting condition!
+
